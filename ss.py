@@ -50,10 +50,10 @@ def win():
     global word
     if wrong_guess>=1 and guesses==length:
         messagebox.showinfo("Correct","Your guesses were correct!\nYou win!")
-        return window.update()
+        return game()
     elif wrong_guess==0:
         messagebox.showinfo("Wrong","Your guesses were incorrect!\nYou lose!\nThe word was:"+word)
-        return window.update()
+        return game()
 def game():
     global r_int
     global guesses
@@ -91,6 +91,4 @@ def game():
     guesses=0
     button1=ttk.Button(window,text="Enter Guess!",command=play)
     button1.pack(pady=5)
-def 
-game()
 window.mainloop()
